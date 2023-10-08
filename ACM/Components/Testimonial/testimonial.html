@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testimonial.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="testimonial-card">
+            <div class="text" id="text">{{description}} <i class="fas fa-quote-right quote"></i></div>
+            <div class="footer">
+                <div class="image">
+                </div>
+                <h3 class='person' id="person">{{name}}</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nm = urlParams.get('name');
+        const des = urlParams.get('description');
+
+        document.getElementById('person').textContent = nm || 'Default Name';
+        document.getElementById('text').textContent = des || 'Default Description';
+    </script>
+</body>
+
+</html>

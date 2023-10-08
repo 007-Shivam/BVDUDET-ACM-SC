@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>3D Flip Card on Hover | CodingLab</title>
+      <link rel="stylesheet" href="card.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="card front-face">
+            <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+         </div>
+         <div class="card back-face">
+            <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <div class="info">
+               <div class="title" id="card-name">
+                  {{name}}
+               </div><br>
+               <p id="card-description">
+                  {{description}}
+               </p>
+            </div>
+            <ul>
+               <a id="fb-lk" href={{fblk}} target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a id="tw-lk" href={{twlk}} target="_blank"><i class="fab fa-twitter"></i></a>
+               <a id="in-lk" href={{inlk}} target="_blank"><i class="fab fa-instagram"></i></a>
+               <a id="li-lk" href={{lilk}} target="_blank"><i class="fab fa-linkedin"></i></a>
+            </ul>
+         </div>
+      </div>
+
+      <script>
+         const urlParams = new URLSearchParams(window.location.search);
+         const name = urlParams.get('name');
+         const description = urlParams.get('description');
+         const fblink = urlParams.get('fblk');
+         const inlink = urlParams.get('inlk');
+         const twlink = urlParams.get('twlk');
+         const lilink = urlParams.get('lilk');
+
+         document.getElementById('card-name').textContent = name || 'Default Name';
+         document.getElementById('card-description').textContent = description || 'Default Description';
+         document.getElementById('fb-lk').href = fblink || 'Default Description';
+         document.getElementById('tw-lk').href = twlink || 'Default Description';
+         document.getElementById('in-lk').href = inlink || 'Default Description';
+         document.getElementById('li-lk').href = lilink || 'Default Description';
+
+
+     </script>
+        
+   </body>
+</html>

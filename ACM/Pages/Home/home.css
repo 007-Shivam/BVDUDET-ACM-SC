@@ -1,0 +1,72 @@
+.center {
+    text-align: center;
+}
+
+body {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: radial-gradient(ellipse at top, #cadee8 1%, #0B0C10 100%);  */
+}
+
+.wel {
+    color: #a3dee3;
+    font-family: 'Poppins', arial;
+    font-size: 2.5em;
+    font-weight: 1000;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.acm {
+    color: #a3dee3;
+    font-family: 'Poppins', arial;
+    font-size: 8.5em;
+    font-weight: 1000;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.tag {
+    color: #a3dee3;
+    font-family: 'Poppins', arial;
+    font-size: 2em;
+    font-weight: 1000;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.scroll {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cardFrame {
+    padding-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer {
+    margin-bottom: 90px;
+}
+
+.title{
+    color: #a3dee3;
+    font-family: 'Poppins', arial;
+    font-weight: 1000;
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+}
+
+body{
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    color: #57b7bf;
+    font-family: 'Poppins', arial;
+    font-size: 2.5em;
+    font-weight: 1000;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer {
+    margin-bottom: 60px;
+}

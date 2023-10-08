@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <div class="nav-links">
+        <img id="clickableImage" src="../Navbar/Assets/acm_logo.png" alt="logo">
+        <li style="margin-left: auto;"><a href="../../Pages/Home/home.html" target="_top">Home</a></li>
+        <li class="center"><a href="../../Pages/About/about.html" target="_top">About</a></li>
+        <li class="center"><a href="../../Pages/Team/team.html" target="_top">Team</a></li>
+        <li class="center"><a href="#">Events ▼</a>
+            <div class="dropdown-content">
+                <a href="../../Pages/Upcoming/upcoming.html" target="_top">Upcoming Events</a>
+                <a href="../../Pages/Past/past.html" target="_top">Past Events</a>
+            </div>
+        </li>
+        <li class="center"><a href="../../Pages/Gallery/gallery.html" target="_top">Gallery</a></li>
+        <li class="center"><a href="../../Pages/Contact/contact.html" target="_top">Contact Us</a></li>
+    </div>
+
+    <script>
+        const image = document.getElementById('clickableImage');
+        const targetUrl = "../../Pages/Home/home.html";
+
+        image.addEventListener('click', function () {
+            if (window.parent) {
+                window.parent.location.href = targetUrl;
+            } else {
+                window.location.href = targetUrl; 
+            }
+        });
+    </script>
+</body>
+</html>
