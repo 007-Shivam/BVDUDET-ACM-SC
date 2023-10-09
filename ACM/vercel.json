@@ -1,0 +1,9 @@
+{
+    "builds": [
+      {
+        "src": "ACM/./Pages/./Home/./home.htm",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  
