@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Pages/Home/home.css">
+
+</head>
+
+<body background="../Pages/Home/Assets/bg7.jpg">
+    <div>
+        <iframe src="../Components/Navbar/navbar.html" frameborder="0" width="100%" ></iframe>
+    </div>
+
+    <div class="center">
+        <p class="wel">
+            WELCOME TO
+        </p>
+        <p class="acm">
+            BVDUDET ACM SC
+        </p>
+        <p class="tag">
+            TAG LINE
+        </p>
+    </div>
+
+    <div class="scroll">
+        <img id="scrollImage" src="../Pages/Home/Assets/scroll.png" alt="scroll" width="70px">
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <h2 class="title">
+        FACULTY MENTORS
+    </h2>
+
+
+    <div>
+        <div class="row">
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe
+                    src="../Components/Card/card.html?name=John&description=Web Developer&fblk=https://www.facebook.com/&twlk=https://www.twitter.com/&inlk=https://www.instagram.com/&lilk=https://www.linkedin.com/"
+                    class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll">
+        <img id="scrollImage2" src="../Pages/Home/Assets/scroll.png" alt="scroll" width="70px">
+    </div>
+
+
+
+    <h2 class="title">
+        TESTIMONIALS </h2>
+
+    <div>
+        <div class="row">
+            <div style="margin-right: 40px;">
+                <iframe src="../Components/Testimonial/testimonial.html?name=John&description=Web Developer"
+                    style="border-radius: 10px;" class="cardFrame" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <div style="margin-right: 40px;">
+                <iframe src="../Components/Testimonial/testimonial.html?name=John&description=Web Developer"
+                    style="border-radius: 10px;" class="cardFrame" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <iframe src="../Components/Testimonial/testimonial.html?name=John&description=Web Developer"
+                    style="border-radius: 10px;" class="cardFrame" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <footer>
+        <iframe src="../Components/Footer/footer.html" frameborder="0" width="100%" height="260px"></iframe>
+    </footer>
+    
+
+    <script>
+        function resizeAllIframes() {
+            var iframes = document.getElementsByClassName('cardFrame');
+            for (var i = 0; i < iframes.length; i++) {
+                var iframe = iframes[i];
+                var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = contentHeight + 'px';
+            }
+        }
+        
+        function onLoadHandler() {
+            resizeAllIframes();
+        }
+    
+        window.addEventListener('load', onLoadHandler); // Change 'load' event here
+    
+        var iframes = document.getElementsByClassName('cardFrame');
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].addEventListener('load', onLoadHandler); // Change 'onload' event here
+        }
+    
+        window.addEventListener('resize', resizeAllIframes);
+    </script>
+    
+
+<script>
+    var scrollImage = document.getElementById('scrollImage2');
+    scrollImage.addEventListener('click', function () {
+        var scrollToY = 1590;
+        window.scrollTo({
+            top: scrollToY,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
