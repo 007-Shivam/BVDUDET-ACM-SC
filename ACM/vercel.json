@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "../Pages/Home/home.html",
+        "src": "ACM/./Pages/./Home/./home.html",
         "use": "@vercel/static"
       }
     ]
