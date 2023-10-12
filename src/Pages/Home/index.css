@@ -61,11 +61,75 @@ body {
     margin-bottom: 90px;
 }
 
-.title{
+.title {
     color: #5fbac2;
     font-family: 'Poppins', arial;
     font-weight: 1000;
     margin: auto;
     font-size: 3em;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .wel {
+        color: #a3dee3;
+        font-family: 'Poppins', arial;
+        font-size: 0.8em;
+        font-weight: 1000;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .acm {
+        color: #a3dee3;
+        text-align: center;
+        font-family: 'Poppins', arial;
+        font-size: 4em;
+        font-weight: 1000;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .tag {
+        color: #a3dee3;
+        font-family: 'Poppins', arial;
+        font-size: 0.8em;
+        font-weight: 1000;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .scroll {
+        display: block;
+    }
+
+    .cardFrame {
+        padding-top: 10px;
+    }
+
+    .row {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .spacer {
+        margin-bottom: 90px;
+    }
+
+    .title {
+        color: #a3dee3;
+        font-family: 'Poppins', arial;
+        font-weight: 1000;
+        margin: auto;
+        font-size: 2em;
+        text-align: center;
+
+    }
+
+    .ft {
+        height: 190px
+    }
+
+
 }
