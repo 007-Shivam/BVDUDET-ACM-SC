@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
 .center {
     text-align: center;
 }
@@ -6,14 +8,12 @@ body {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(180deg, #d2d2d2 40%, rgb(41, 41, 41));
 }
 
 .wel {
-    color: #5fbac2;
-    font-family: 'Poppins', arial;
+    color: #070450;
+    font-family: 'Roboto Slab', serif;
     font-size: 2.5em;
     font-weight: 1000;
     margin: auto;
@@ -21,8 +21,8 @@ body {
 }
 
 .acm {
-    color: #5fbac2;
-    font-family: 'Poppins', arial;
+    color: #070450;
+    font-family: 'Roboto Slab', serif;
     font-size: 8.5em;
     font-weight: 1000;
     margin: auto;
@@ -30,8 +30,8 @@ body {
 }
 
 .tag {
-    color: #5fbac2;
-    font-family: 'Poppins', arial;
+    color: #070450;
+    font-family: 'Roboto Slab', serif;
     font-size: 2em;
     font-weight: 1000;
     margin: auto;
@@ -47,6 +47,16 @@ body {
 
 .cardFrame {
     padding-top: 50px;
+    max-width: 100%;
+
+}
+
+.row {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row {
@@ -58,12 +68,12 @@ body {
 }
 
 .spacer {
-    margin-bottom: 90px;
+    margin-bottom: 95px;
 }
 
 .title {
-    color: #5fbac2;
-    font-family: 'Poppins', arial;
+    color: #070450;
+    font-family: 'Roboto Slab', serif;
     font-weight: 1000;
     margin: auto;
     font-size: 3em;
@@ -72,7 +82,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .wel {
-        color: #a3dee3;
+        color: #070450;
         font-family: 'Poppins', arial;
         font-size: 0.8em;
         font-weight: 1000;
@@ -81,7 +91,7 @@ body {
     }
 
     .acm {
-        color: #a3dee3;
+        color: #070450;
         text-align: center;
         font-family: 'Poppins', arial;
         font-size: 4em;
@@ -91,7 +101,7 @@ body {
     }
 
     .tag {
-        color: #a3dee3;
+        color: #070450;
         font-family: 'Poppins', arial;
         font-size: 0.8em;
         font-weight: 1000;
@@ -118,7 +128,7 @@ body {
     }
 
     .title {
-        color: #a3dee3;
+        color: #070450;
         font-family: 'Poppins', arial;
         font-weight: 1000;
         margin: auto;
@@ -130,6 +140,5 @@ body {
     .ft {
         height: 190px
     }
-
 
 }

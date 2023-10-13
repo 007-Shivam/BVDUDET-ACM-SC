@@ -18,21 +18,21 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  padding: 20px 15px;
+  padding: 17px 15px;
   flex-grow: 1;
-  margin-top: 85px;
+  margin-top: 100px;
   margin-right: 20px;
   margin-left: 20px;
   border: white solid;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: #000;
+  background-color: #070450;
 }
 
 .nav-links img {
   display: block;
-  height: 55px;
-  width: 55px;
+  height: 75px; 
+  width: 75px;  
   margin-left: 0;
 
 }
@@ -76,7 +76,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000;
+  background-color: #070450;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 20px;
@@ -92,14 +92,12 @@ body {
 
 .dropdown-content a:hover {
   border-radius: 20px;
-
   transform: 5s ease-in-out;
 }
 
 .nav-links li:hover .dropdown-content {
   display: block;
   border-radius: 20px;
-
 }
 
 @media only screen and (max-width: 600px) {  
@@ -112,8 +110,6 @@ body {
     margin-left: 10px;
     border: white solid;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #000;
   }
   
   .nav-links img {
@@ -149,7 +145,6 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
     min-width: 110px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
