@@ -6,8 +6,8 @@ body{
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-    background: linear-gradient(180deg, #d2d2d2 40%, rgb(41, 41, 41));
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title{

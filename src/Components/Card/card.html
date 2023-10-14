@@ -3,7 +3,8 @@
 
 <head>
    <meta charset="utf-8">
-   <title>3D Flip Card on Hover | CodingLab</title>
+   <title></title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="card.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -24,10 +25,9 @@
             </p>
          </div>
          <ul>
-            <a id="fb-lk" href={{fblk}} target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a id="tw-lk" href={{twlk}} target="_blank"><i class="fab fa-twitter"></i></a>
-            <a id="in-lk" href={{inlk}} target="_blank"><i class="fab fa-instagram"></i></a>
+            <a id="gi-lk" href={{gilk}} target="_blank"><i class="fab fa-github"></i></a>
             <a id="li-lk" href={{lilk}} target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a id="gl-lk" href={{gllk}} target="_blank"><i class="fa fa-globe"></i></a>
          </ul>
       </div>
    </div>
@@ -36,21 +36,41 @@
       const urlParams = new URLSearchParams(window.location.search);
       const name = urlParams.get('name');
       const description = urlParams.get('description');
-      const fblink = urlParams.get('fblk');
-      const inlink = urlParams.get('inlk');
-      const twlink = urlParams.get('twlk');
+      const gllink = urlParams.get('gllk');
+      const gilink = urlParams.get('gilk');
       const lilink = urlParams.get('lilk');
       const frontImage = urlParams.get('frontImage');
       const backImage = urlParams.get('backImage');
 
       document.getElementById('card-name').textContent = name || 'Default Name';
       document.getElementById('card-description').textContent = description || 'Default Description';
-      document.getElementById('fb-lk').href = fblink || 'Default Description';
-      document.getElementById('tw-lk').href = twlink || 'Default Description';
-      document.getElementById('in-lk').href = inlink || 'Default Description';
-      document.getElementById('li-lk').href = lilink || 'Default Description';
+      document.getElementById('gl-lk').href = gilink;
+      document.getElementById('gi-lk').href = gllink;
+      document.getElementById('li-lk').href = lilink;
       document.getElementById('front-image').src = frontImage || ''; // Set front image source
       document.getElementById('back-image').src = backImage || ''; // Set back image source
+
+      if (!gilink) {
+         const twitterLink = document.getElementById('gl-lk');
+         if (twitterLink) {
+            twitterLink.parentNode.removeChild(twitterLink);
+         }
+      }
+
+      if (!gllink) {
+         const instagramLink = document.getElementById('gi-lk');
+         if (instagramLink) {
+            instagramLink.parentNode.removeChild(instagramLink);
+         }
+      }
+
+      if (!lilink) {
+         const linkedgllink = document.getElementById('li-lk');
+         if (linkedgllink) {
+            linkedgllink.parentNode.removeChild(linkedgllink);
+         }
+      }
+
 
    </script>
 
