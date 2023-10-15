@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
 *{
     text-align: center;
 }
@@ -12,7 +14,7 @@ body{
 
 .title{
     color: #070450;
-    font-family: 'Poppins', arial;
+    font-family: 'Roboto Slab', serif;
     font-size: 2.5em;
     font-weight: 1000;
     margin: auto;

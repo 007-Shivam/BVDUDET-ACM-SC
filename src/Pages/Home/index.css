@@ -84,7 +84,7 @@ body {
 @media only screen and (max-width: 600px) {
     .wel {
         color: #070450;
-        font-family: 'Poppins', arial;
+        font-family: 'Roboto Slab', serif;
         font-size: 0.8em;
         font-weight: 1000;
         margin: auto;
@@ -94,7 +94,7 @@ body {
     .acm {
         color: #070450;
         text-align: center;
-        font-family: 'Poppins', arial;
+        font-family: 'Roboto Slab', serif;
         font-size: 4em;
         font-weight: 1000;
         margin: auto;
@@ -103,7 +103,7 @@ body {
 
     .tag {
         color: #070450;
-        font-family: 'Poppins', arial;
+        font-family: 'Roboto Slab', serif;
         font-size: 0.8em;
         font-weight: 1000;
         margin: auto;
@@ -130,7 +130,7 @@ body {
 
     .title {
         color: #070450;
-        font-family: 'Poppins', arial;
+        font-family: 'Roboto Slab', serif;
         font-weight: 1000;
         margin: auto;
         font-size: 2em;

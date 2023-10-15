@@ -59,7 +59,7 @@ html,body{
   width: 100px;
   padding: 5px;
   border-radius: 50%;
-  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  background: linear-gradient(375deg, #070450, #2eccde);
 }
 .wrapper .back-face .info{
   text-align: center;
@@ -81,11 +81,11 @@ html,body{
   line-height: 38px;
   border: 2px solid transparent;
   border-radius: 50%;
-  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  background: linear-gradient(#070450, #2eccde);
   transition: all 0.5s ease;
 }
 .back-face ul a:hover{
-  color: #1cc7d0;
-  border-color: #1cc7d0;
+  color: #070450;
+  border-color: #070450;
   background: linear-gradient(375deg, transparent, transparent);
 }
