@@ -44,21 +44,21 @@
 
       document.getElementById('card-name').textContent = name || 'Default Name';
       document.getElementById('card-description').textContent = description || 'Default Description';
-      document.getElementById('gl-lk').href = gilink;
-      document.getElementById('gi-lk').href = gllink;
+      document.getElementById('gl-lk').href = gllink;
+      document.getElementById('gi-lk').href = gilink;
       document.getElementById('li-lk').href = lilink;
       document.getElementById('front-image').src = frontImage || ''; // Set front image source
       document.getElementById('back-image').src = backImage || ''; // Set back image source
 
       if (!gilink) {
-         const twitterLink = document.getElementById('gl-lk');
+         const twitterLink = document.getElementById('gi-lk');
          if (twitterLink) {
             twitterLink.parentNode.removeChild(twitterLink);
          }
       }
 
       if (!gllink) {
-         const instagramLink = document.getElementById('gi-lk');
+         const instagramLink = document.getElementById('gl-lk');
          if (instagramLink) {
             instagramLink.parentNode.removeChild(instagramLink);
          }

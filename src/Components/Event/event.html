@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="event">
+        <div class="row">
+            <div class="rw-img">
+                <img id="ev-img" src="" width="150px" height="140px" alt="img">
+            </div>
+            <div class="inner">
+                <div class="rw-title">
+                    <h3 id="ev-title">{{tit}}</h3>
+                </div>
+                <div class="rw-des">
+                    <p id="ev-des">
+                        {{desp}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('tit');
+        const description = urlParams.get('desp');
+        const image = urlParams.get('ev-img');
+
+
+        document.getElementById('ev-title').textContent = title || 'Default Name';
+        document.getElementById('ev-des').textContent = description || 'Default Description';
+        document.getElementById('ev-img').src = image || ''; // Set front image source
+
+    </script>
+
+
+</body>
+
+</html>
