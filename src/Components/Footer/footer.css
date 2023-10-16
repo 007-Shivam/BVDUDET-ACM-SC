@@ -16,7 +16,7 @@ footer{
     width: 100vw;
     font-family: "Open Sans";
     padding-top: 10px;
-    color: #000;    
+    color: #fff;
     
 }
 .footer-content{
@@ -45,7 +45,7 @@ footer{
 }
 .socials a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .socials a i{
     font-size: 1.1rem;
