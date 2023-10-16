@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title{
@@ -20,6 +28,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.ev{
+    margin-bottom: 20px;
 }
 
 .event {
@@ -41,4 +53,19 @@ body {
 
 .spacer{
     margin-bottom: 20px;
+}
+
+.box {
+    color: #fff;
+    border-radius: 10px;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease; /* Reduce the transition time */
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(100%);
+}
+
+.box.show {
+    transform: translateX(0);
 }

@@ -2,6 +2,14 @@
 
 .center {
     text-align: center;
+    opacity: 0;
+    animation: ani2 0.75s ease-out 0.5s forwards;
+}
+
+@keyframes ani2 {
+    100%{
+        opacity: 1;
+    }
 }
 
 body {
@@ -15,7 +23,7 @@ body {
 .wel {
     color: #070450;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 1000;
     margin: auto;
     margin-top: 40px;
@@ -60,16 +68,8 @@ body {
     justify-content: center;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .spacer {
-    margin-bottom: 95px;
+    margin-bottom: 110px;
 }
 
 .title {
@@ -81,10 +81,25 @@ body {
     text-align: center;
 }
 
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     .wel {
         color: #070450;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Poppins', arial;
         font-size: 0.8em;
         font-weight: 1000;
         margin: auto;
@@ -94,7 +109,7 @@ body {
     .acm {
         color: #070450;
         text-align: center;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Poppins', arial;
         font-size: 4em;
         font-weight: 1000;
         margin: auto;
@@ -103,7 +118,7 @@ body {
 
     .tag {
         color: #070450;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Poppins', arial;
         font-size: 0.8em;
         font-weight: 1000;
         margin: auto;
@@ -130,7 +145,7 @@ body {
 
     .title {
         color: #070450;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Poppins', arial;
         font-weight: 1000;
         margin: auto;
         font-size: 2em;
