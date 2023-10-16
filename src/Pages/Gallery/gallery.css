@@ -5,3 +5,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.stk{
+    position: sticky;
+    top: 1px;
+    z-index: 99999;
+}

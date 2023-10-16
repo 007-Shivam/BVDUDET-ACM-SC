@@ -17,6 +17,12 @@ body {
     align-items: center;
 }
 
+.stk{
+    position: sticky;
+    top: 1px;
+    z-index: 99999;
+}
+
 .title{
     margin-left: 15px;
     color: #070450;

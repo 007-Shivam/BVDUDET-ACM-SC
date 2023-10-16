@@ -12,6 +12,12 @@ body {
     background-size: cover;
 }
 
+.stk{
+    position: sticky;
+    top: 1px;
+    z-index: 99999;
+}
+
 a{
     cursor: pointer;
 }
