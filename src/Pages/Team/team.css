@@ -11,6 +11,12 @@ body{
     background-size: cover;
 }
 
+.stk{
+    position: sticky;
+    top: 1px;
+    z-index: 99999;
+}
+
 .title{
     color: #070450;
     font-family: 'Poppins', arial;
