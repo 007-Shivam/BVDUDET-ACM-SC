@@ -65,6 +65,7 @@
         });
 
         team2024Button.addEventListener("click", () => {
+            teamFrame.style.height = "100px";
             teamFrame.src = "javascript:void(0);"; // Set the iframe's content to a JavaScript void
             teamFrame.contentWindow.document.write("<h3>Team yet to be selected . . .</h3>"); // Display the message
         });

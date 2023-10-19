@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tm.css">
+    <link rel="stylesheet" href="../../../Pages/Home/Assets/Dhwaniket Kamble.jpg">
+    <title></title>
+</head>
+<body>
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Dhwaniket Kamble&description=Faculty Sponsor&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Pages/Home/Assets/Dhwaniket Kamble.jpg&backImage=/src/Pages/Home/Assets/Dhwaniket Kamble.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Dr. Kamal Mehta&description=Faculty Mentor&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Kamal Mehta.jpg&backImage=/src/Pages/Home/Assets/Kamal Mehta.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Poonam Kapse&description=President&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Poonam Kapse.jpg&backImage=/src/Pages/Home/Assets/Poonam Kapse.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Diksha Bhalerao&description=Vice President&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Diksha Bhalerao.jpg&backImage=/src/Pages/Home/Assets/Diksha Bhalerao.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Santosh Rathod&description=Website Co-ordinator&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Santosh Rathod.jpg&backImage=/src/Pages/Home/Assets/Santosh Rathod.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Deepika Sharma&description=Website Co-ordinator&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Deepika Sharma.jpg&backImage=/src/Pages/Home/Assets/Deepika Sharma.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Sumita Kumar&description=Newsletter Co-ordinator&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Sumita Kumar.jpg&backImage=/src/Pages/Home/Assets/Sumita Kumar.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Prof. Snehal Lohi&description=Newsletter Co-ordinator&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Pages/Home/Assets/Snehal Lohi.jpg&backImage=/src/Pages/Home/Assets/Snehal Lohi.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+
+    <script>
+        function resizeAllIframes() {
+            var iframes = document.getElementsByClassName('cardFrame');
+            for (var i = 0; i < iframes.length; i++) {
+                var iframe = iframes[i];
+                var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = contentHeight + 'px';
+            }
+        }
+
+        function onLoadHandler() {
+            resizeAllIframes();
+        }
+
+        window.addEventListener('load', onLoadHandler); // Change 'load' event here
+
+        var iframes = document.getElementsByClassName('cardFrame');
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].addEventListener('load', onLoadHandler); // Change 'onload' event here
+        }
+
+        window.addEventListener('resize', resizeAllIframes);
+    </script>
+</body>
+</html>

@@ -20,6 +20,31 @@ body {
     background-size: cover;
 }
 
+.cont {
+    margin-left: 20vh;
+}
+
+.row {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.bx {
+    margin: 40px;
+    margin-right: 20vh;
+    padding: 20px;
+    background: #fff;
+    border: #070450 solid 5px;
+}
+
+.abt-des {
+    font-family: 'Roboto Slab', serif;
+}
+
 .stk{
     position: sticky;
     top: 1px;

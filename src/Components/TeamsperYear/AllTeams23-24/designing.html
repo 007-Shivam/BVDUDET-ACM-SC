@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tm.css">
+    <title></title>
+</head>
+<body>
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Souti Samanta&description=Graphics Master&gilk=https://github.com/Souti717&lilk=https://www.linkedin.com/in/souti-samanta-696807291/&frontImage=/src/Components/TeamsperYear/team23-24/Souti Samanta.png&backImage=/src/Components/TeamsperYear/team23-24/Souti Samanta.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Saloni Wani&description=Creativity Head&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Saloni Wani.png&backImage=/src/Components/TeamsperYear/team23-24/Saloni Wani.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <h2 class="title">LEADS</h2>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function resizeAllIframes() {
+            var iframes = document.getElementsByClassName('cardFrame');
+            for (var i = 0; i < iframes.length; i++) {
+                var iframe = iframes[i];
+                var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = contentHeight + 'px';
+            }
+        }
+
+        function onLoadHandler() {
+            resizeAllIframes();
+        }
+
+        window.addEventListener('load', onLoadHandler); // Change 'load' event here
+
+        var iframes = document.getElementsByClassName('cardFrame');
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].addEventListener('load', onLoadHandler); // Change 'onload' event here
+        }
+
+        window.addEventListener('resize', resizeAllIframes);
+    </script>
+</body>
+</html>

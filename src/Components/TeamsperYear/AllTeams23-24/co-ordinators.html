@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tm.css">
+    <title></title>
+</head>
+<body>
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Sakshi Jadhav&description=Chairperson&lilk=https://www.linkedin.com/in/sakshi-jadhav-402165219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&frontImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png&backImage=/src/Components/TeamsperYear/team23-24/Sakshi Jadhav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Gaurav Desale&description=Vice Chairperson&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Gaurav Desale.jpg&backImage=/src/Components/TeamsperYear/team23-24/Gaurav Desale.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Fahim Khan&description=Secretary&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Fahim Khan.jpg&backImage=/src/Components/TeamsperYear/team23-24/Fahim Khan.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Shubham Sontakke&description=Treasurer&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Shubham Sontakke.png&backImage=/src/Components/TeamsperYear/team23-24/Shubham Sontakke.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Aviral Dev&description=Vice Treasurer&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Aviral Dev.png&backImage=/src/Components/TeamsperYear/team23-24/Aviral Dev.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Varshita Nalluri&description=ACM-Women Chairperson&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Varshita Nalluri.jpg&backImage=/src/Components/TeamsperYear/team23-24/Varshita Nalluri.jpg"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div>
+            <iframe
+                src="../../Card/card.html?name=Nishtha Yadav&description=ACM-Women Vice Chairperson&gilk=https://www.github.com/&gllk=https://www.instagram.com/&lilk=https://www.linkedin.com/&frontImage=/src/Components/TeamsperYear/team23-24/Nishtha Yadav.png&backImage=/src/Components/TeamsperYear/team23-24/Nishtha Yadav.png"
+                class="cardFrame" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+
+    <script>
+        function resizeAllIframes() {
+            var iframes = document.getElementsByClassName('cardFrame');
+            for (var i = 0; i < iframes.length; i++) {
+                var iframe = iframes[i];
+                var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = contentHeight + 'px';
+            }
+        }
+
+        function onLoadHandler() {
+            resizeAllIframes();
+        }
+
+        window.addEventListener('load', onLoadHandler); // Change 'load' event here
+
+        var iframes = document.getElementsByClassName('cardFrame');
+        for (var i = 0; i < iframes.length; i++) {
+            iframes[i].addEventListener('load', onLoadHandler); // Change 'onload' event here
+        }
+
+        window.addEventListener('resize', resizeAllIframes);
+    </script>
+</body>
+</html>
