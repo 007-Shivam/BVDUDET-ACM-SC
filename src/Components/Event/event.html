@@ -38,6 +38,27 @@
         document.getElementById('ev-des').textContent = description || 'Default Description';
         document.getElementById('ev-img').src = image || ''; // Set front image source
 
+        if (!title) {
+            const twitterLink = document.getElementById('ev-title');
+            if (twitterLink) {
+                twitterLink.parentNode.removeChild(twitterLink);
+            }
+        }
+
+        if (!description) {
+            const instagramLink = document.getElementById('ev-des');
+            if (instagramLink) {
+                instagramLink.parentNode.removeChild(instagramLink);
+            }
+        }
+
+        if (!image) {
+            const linkedgllink = document.getElementById('ev-img');
+            if (linkedgllink) {
+                linkedgllink.parentNode.removeChild(linkedgllink);
+            }
+        }
+
     </script>
 
 
