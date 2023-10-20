@@ -6,16 +6,43 @@
     <link rel="stylesheet" href="gallery.css">
     <title>Gallery</title>
 </head>
-<body background="../Gallery/Assets/bg.jpg">
+<body>
     <div class="stk">
         <iframe src="../../Components/Navbar/navbar.html" frameborder="0" width="100%" scrolling="no"></iframe>
     </div>
 
-
+    <div class="img" id="fullimgbox">
+        <img src="gallery1.jpg" id="fullimg">
+        <span onclick="closefullimg()" style="color: black;">X</span>
+    </div>
+    <div class="img-gallery">
+    <img src="Assets/gallery1.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery2.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery3.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery1.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery2.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery3.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery1.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery2.jpg" alt="error" onclick="openfullimg(this.src)">
+    <img src="Assets/gallery3.jpg" alt="error" onclick="openfullimg(this.src)">
+    </div>
 
     <footer>
         <iframe src="../../Components/Footer/footer.html" frameborder="0" width="100%" height="260px"></iframe>
     </footer>
     
+    <script>
+        var fullimgbox= document.getElementById("fullimgbox");
+        var fullimg= document.getElementById("fullimg");
+    
+        function openfullimg(pic){
+            fullimgbox.style.display="flex";
+            fullimg.src=pic;
+        }
+    
+        function closefullimg(){
+            fullimgbox.style.display="none";
+        }
+      </script>
 </body>
 </html>
